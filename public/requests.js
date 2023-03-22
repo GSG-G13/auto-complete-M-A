@@ -6,6 +6,6 @@ const fetch = (url, cb) => {
       cb(response);
     }
   };
-  xhr.open("GET", url, true);
+  xhr.open("GET", `/autocomplete?q=${query}`, true);
   xhr.send();
 };
