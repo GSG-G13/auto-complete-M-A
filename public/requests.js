@@ -1,4 +1,4 @@
-const fetch = (url, cb) => {
+const myFetch = (url, cb) => {
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = () => {
     if (xhr.status == 200 && xhr.readyState == 4) {
@@ -6,6 +6,6 @@ const fetch = (url, cb) => {
       cb(response);
     }
   };
-  xhr.open("GET", `/autocomplete?q=${query}`, true);
+  xhr.open("GET", url, true);
   xhr.send();
 };

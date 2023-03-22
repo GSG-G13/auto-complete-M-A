@@ -11,9 +11,13 @@ body {
   padding-top: 9rem;
   min-height: 100vh;
   justify-content: center;
-  background-color: #DCD9D4;
- background-image: linear-gradient(to bottom, rgb(90 88 88 / 50%)  28%, rgba(255,255,255,0.50) 30%);
- background-blend-mode: soft-light,screen;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(90 88 88 / 50%) 28%,
+    rgba(255, 255, 255, 0.5) 30%
+  );
+  background-blend-mode: soft-light, screen;
 }
 .input-box {
   position: relative;
@@ -61,13 +65,14 @@ body {
   transform: translateY(-50%) scale(0.98);
 }
 /* Dropdown Menu code start */
-.links{
-    width: 900px;
-    background: #eee;
-    margin: auto;
-    list-style: none;
+.links {
+  width: 900px;
+  background: #eee;
+  margin: auto;
+  list-style: none;
+  margin-bottom: 3rem;
 }
-.links ul{
+.links ul {
   position: absolute;
   background: #171c24;
   top: 80px;
@@ -78,13 +83,13 @@ body {
 .links li {
   padding: 12px;
 }
-.links li:hover > ul{
+.links li:hover > ul {
   top: 70px;
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
 }
-.links  li a{
+.links li a {
   display: block;
   width: 100%;
   line-height: 30px;
@@ -92,15 +97,15 @@ body {
   color: #000;
   /* border-radius: 0px!important; */
 }
-.links ul ul{
+.links ul ul {
   position: absolute;
   top: 0;
   right: calc(-100% + 8px);
 }
-.links ul li{
+.links ul li {
   position: relative;
 }
-.links ul li:hover ul{
+.links ul li:hover ul {
   top: 0;
 }
 
