@@ -1,21 +1,20 @@
-{ "fac": [
-  { "name": "Nour"},
-  { "name": "Amal"},
-  { "name": "Shathaa"},
-  { "name": "Alaa"},
-  { "name": "Hamdi"},
-  { "name": "Mohammed"},
-  { "name": "Aya"},
-  { "name": "Abeer"},
-  { "name": "Mohannad"},
-  { "name": "Khaled"},
-  { "name": "Heleena"},
-  { "name": "Haitham"},
-  { "name": "Eman"},
-  { "name": "Abdallah"},
-  { "name": "Raghda"},
-  { "name": "Momen"},
-  { "name": "Yaser"},
-  { "name": "Karam"}
-  ]
-}
+[
+  "Nour",
+  "Amal",
+  "Shathaa",
+  "Alaa",
+  "Hamdi",
+  "Mohammed",
+  "Aya",
+  "Abeer",
+  "Mohannad",
+  "Khaled",
+  "Heleena",
+  "Haitham",
+  "Eman",
+  "Abdallah",
+  "Raghda",
+  "Momen",
+  "Yaser",
+  "Karam"
+]
