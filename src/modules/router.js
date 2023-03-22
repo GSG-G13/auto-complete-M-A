@@ -27,9 +27,12 @@ const router = function (request, response) {
       response.writeHead(200, "Content-Type: text/html");
       response.end(file);
     });
-  } else if (endpoint.includes("/autocomplete?q=")) {
-    let query = endpoint.split("q=")[1];
+  } else if (endpoint.includes("/autocomplete")) {
+    let query = endpoint.split("?q=")[1];
     autocomplete(response, query);
+  } else if (endpoint.includes("/selected")) {
+    let query = endpoint.split("?q=")[1];
+    searchMeaning(response, query);
   } else {
     publicHandler(request, response, endpoint);
   }

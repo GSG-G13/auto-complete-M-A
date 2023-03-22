@@ -1,6 +1,7 @@
 const fs = require("fs");
 const querystring = require("querystring");
 const data = require("../respons-name.json");
+const meanData = require("../response-meaning.json");
 const url = require("url");
 const path = require("path");
 
@@ -29,12 +30,13 @@ const searchName = function (str, obj) {
   return arr.slice(0, 3);
 };
 
-const searchMeaning = function (str, obj) {
-  let found = obj.find(function (each) {
-    // return each.name.toLowerCase() === str.toLowerCase();
-    return
+const searchMeaning = function (response, str) {
+
+  const myMeaning = meanData.filter((e) => {
+    return e[str];
   });
-  return found;
+  response.writeHead(200, { "Content-Type": "text/html" });
+  response.end(JSON.stringify(myMeaning));
 };
 
 module.exports = {
