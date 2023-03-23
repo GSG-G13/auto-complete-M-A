@@ -49,6 +49,7 @@ body {
   border: none;
   padding: 0 155px 0 65px;
   background-color: transparent;
+  
 }
 .input-box .button {
   right: 20px;
@@ -108,7 +109,21 @@ body {
 .links ul li:hover ul {
   top: 0;
 }
-
+.name-desc{
+  width: 68%;
+  margin: auto;
+  font-size: 18px;
+  background: #eee;
+  padding: 16px;
+  text-align: center;
+  direction: rtl;
+  border-radius:7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+  -ms-border-radius:7px;
+  -o-border-radius:7px;
+  margin-bottom:3rem ;
+}
 /* Responsive */
 @media screen and (max-width: 500px) {
   .input-box {
