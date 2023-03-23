@@ -24,7 +24,9 @@ const nameRequest = (query) => {
       nameList.append(nameItem);
       body.append(nameList);
       nameLink.addEventListener("click", () => {
-        myFetch(`/selected?q=${nameLink.textContent}`, (data) => showMeaning(data,nameLink.textContent));
+        myFetch(`/selected?q=${nameLink.textContent}`, (data) =>
+          showMeaning(data, nameLink.textContent)
+        );
       });
     });
   });
